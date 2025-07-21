@@ -1,4 +1,4 @@
-# 20260628 Copilot PlanFirst chat mode
+# 20250628 Copilot PlanFirst chat mode
 # 厲害的 Copilot PlanFirst 模式
 
 **附上 VSCode Insiders 新版功能介紹**
@@ -7,7 +7,7 @@
 
 據保哥說，這個系統提示可讓 0 點無限量使用的 GPT-4.1，表現，與需耗用 1 點之 Claude Sonnet 4 一樣好。我依 Copilot 規格修改為 PlanFirst 模式。其他 AI IDE 也可以參考這個系統提示試試看。最後附上 VSCode Insiders GitHub Copilot 新功能介紹。最終結果如下:
 
-![](Images/20260628.png)
+![](Images/20250628.png)
 ## 起源
 
 由保哥分享，VS Code 核心成員 [burkeholland](https://gist.github.com/burkeholland) 分享了 [4.1 Custom Mode](https://gist.github.com/burkeholland/7aa408554550e36d4e951a1ead2bc3ac) 系統提示，說可讓 GPT-4.1 表現與 Claude Sonnet 4 一樣好。不過我看內容並沒有一般 GitHub Copilot 的標頭，裡面引用的工具名稱也不是 VSCode 裡面的，懷疑並不是 GitHub Copilot 用的提示。不過覺得提示內容不錯，就來自行改寫。
