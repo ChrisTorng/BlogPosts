@@ -1,0 +1,92 @@
+# 20251005 BDD Codex Cloud tic-tac-toe
+# 以 BDD 在 Codex Cloud 開發井字遊戲
+
+**理想目標: 用 Codex Cloud 做 BDD 就不用學 spec-kit 及開發 → 結果好壞參半**
+
+![](<Images/ChatGPT Image Oct 5, 2025, 04_49_44 PM.png>)
+
+繼續思考昨天的 [spec-kit 到 BDD 及敏捷宣言反思](20251004%20spec-kit%20to%20BDD%20and%20Agile%20Manifesto%20Reflection.md)，我認為應該可以不需要學習 [spec-kit](https://github.com/github/spec-kit) 開發工具，就能以 BDD 之完整測試規格，驅動 AI Agents 製作可靠的程式。今天試用 [Codex Cloud](https://chatgpt.com/codex)，以 BDD 來實作[保哥簡報](https://docs.google.com/presentation/d/1xRTl-RBTuJOvNmSZz7XjxztrxLnFRh7QmZRQLpObMQU/edit?slide=id.p2#slide=id.p2)中的井字遊戲。
+
+請參考:
+- GitHub 原始碼 [ChrisTorng/bdd-tic-tac-toe](https://github.com/ChrisTorng/bdd-tic-tac-toe)
+- Cucumber/Gherkin 繁體中文規格文件 [tic\_tac\_toe.feature](https://github.com/ChrisTorng/bdd-tic-tac-toe/blob/main/features/tic_tac_toe.feature)
+- 完整 [Codex Cloud 對話](https://chatgpt.com/s/cd_68e1954141f88191a9f4364be5821ea9)
+- 被放棄的版本之本機開發完整 [GitHub Copilot 對話](https://github.com/ChrisTorng/bdd-tic-tac-toe/blob/0356be4c86d963ffb1b5589ab9945c5fc527c791/progress/1.md)
+- 最終接受版本之執行成果 [井字遊戲](https://bdd-tic-tac-toe.vercel.app/)
+
+## 一、Codex Cloud 對話
+
+這裡有完整 [Codex Cloud 對話](https://chatgpt.com/s/cd_68e1954141f88191a9f4364be5821ea9)。底下是完整提示，以及結果簡述:
+
+1. **使用 BDD Cucumber/Gherkin，先建立井字遊戲網站的詳細規格，先讓我審查。**<br/>
+   => 我選擇生成兩個版本，Version 1 是英文的， Version 2 是繁體中文的 (所以以後要直接提示使用繁體中文建立)，我選擇用繁體中文版本 Version 2 繼續。
+
+2. **依目前規格，先建立 GitHub repo 基本實作 (README.md/MIT) Cucumber/Gherkin 自動測試執行環境，再完成遊戲實作。最後完成 預設 GitHub Actions 佈署以及線上網站 https://christorng.github.io/bdd-tic-tac-toe/ 正確執行完成。**<br/>
+   => Version 2 花 10 分鐘很快就建立完成，Version 1 花 17 分鐘。兩個都因網路不通而無法安裝 npm 套件。但 Codex 選擇自行重新實作簡單的 cucumber 程式，從而解決了無法下載套件的問題。
+
+我把兩個都建立 PR:
+
+1. Version 1 [PR #1](https://github.com/ChrisTorng/bdd-tic-tac-toe/pull/1)<br/>
+   => 建立後發現 GitHub Pages 不會自動佈署，我先前有 [Vercel](https://vercel.com) 經驗，知道它會為每個 PR 都自動佈署。
+
+2. 設定 Vercel 後，再將 Version 2 建立 [PR #2](https://github.com/ChrisTorng/bdd-tic-tac-toe/pull/2)<br/>
+   => Vercel 自動佈署 PR 版本，因先前沒辦法 `npm install`，缺少 `packages-lock.json` 而佈署失敗。
+
+這下還是只能拉到本機開發環境，確保所有需要做的事都完成，再更新 PR。
+
+## 二、Version 2 之 VSCode GitHub Copilot 對話
+
+我在 VSCode 安裝 [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) 套件，拉下 Version 2 PR，再請 GitHub Copilot + Claude Sonnet 4.5 來做事。
+
+這裡有 [GitHub Copilot 對話](https://github.com/ChrisTorng/bdd-tic-tac-toe/blob/0356be4c86d963ffb1b5589ab9945c5fc527c791/progress/1.md)。底下是完整提示，以及結果簡述:
+
+1. **為我安裝，執行測試通過再顯示網站內容。**<br/>
+   => 因為執行 Cucumber，要求升級 Node.js。
+
+2. **已經更新 node 到 24.9，請再次執行測試。**<br/>
+   => 本機測試出現 Cucumber 執行錯誤，結果是設定語言 `zh-CN`，它自動修正為 `zh-TW`。後續執行又修了一些問題 (可能是 Codex Cloud 無法執行真正 Cucumber 的關係) 就完成了。我發 PR，但 Vercel 因無 `vercel.json` 而佈署錯誤。
+
+3. **Deployment failed with the following error:<br/>
+   The `vercel.json` schema validation failed with the following message: `framework` should be equal to one of the allowed values "blitzjs, nextjs, gatsby, remix, react-router, astro, hexo, eleventy, docusaurus-2, docusaurus, preact, solidstart-1, solidstart, dojo, ember, vue, scully, ionic-angular, angular, polymer, svelte, sveltekit, sveltekit-1, ionic-react, create-react-app, gridsome, umijs, sapper, saber, stencil, nuxtjs, redwoodjs, hugo, jekyll, brunch, middleman, zola, hydrogen, vite, vitepress, vuepress, parcel, fastapi, fasthtml, sanity-v3, sanity, storybook, nitro, hono, express, h3, xmcp, "**<br/>
+   => 它建立了 `vercel.json`。我發 PR，Vercel 佈署成功，網站正確執行。
+
+## 三、Version 1 Vercel 設定
+
+為了重新觸發 Version 1 之 Vercel 佈署，我於 Codex Cloud 中再叫它改一點東西再發 PR。
+
+1. 於 `README.md` 中要求更新授權說明
+
+2. **改為使用 Vercel 佈署至 https://bdd-tic-tac-toe.vercel.app/**<br/>
+   => 修改 `README.md` 並建立 `vercel.json`，發 PR，但 Vercel 佈署顯示錯誤。
+
+3. **Deployment failed with the following error:<br/>
+   The `vercel.json` schema validation failed with the following message: `framework` should be equal to one of the allowed values "blitzjs, nextjs, gatsby, remix, react-router, astro, hexo, eleventy, docusaurus-2, docusaurus, preact, solidstart-1, solidstart, dojo, ember, vue, scully, ionic-angular, angular, polymer, svelte, sveltekit, sveltekit-1, ionic-react, create-react-app, gridsome, umijs, sapper, saber, stencil, nuxtjs, redwoodjs, hugo, jekyll, brunch, middleman, zola, hydrogen, vite, vitepress, vuepress, parcel, fastapi, fasthtml, sanity-v3, sanity, storybook, nitro, hono, express, h3, xmcp, "**<br/>
+   => 修正 `vercel.json` 完成，Vercel 佈署成功，網站正確執行。
+
+## 成果
+
+比較 Vercel 裡面兩個 PR 的執行版本 (應該僅有我的帳號能開啟以下兩個連結)，其實還蠻接近的:
+
+[Version 1](https://bdd-tic-tac-toe-git-codex-create-bd-e58f0e-christorngs-projects.vercel.app/):<br/>
+![Version 1](<Images/20251005 v1.png>)
+
+[Version 2](https://bdd-tic-tac-toe-git-codex-create-bd-5b851d-christorngs-projects.vercel.app/):<br/>
+![Version 2](<Images/20251005 v1.png>)
+
+最後還是選擇僅用 Codex Cloud 建立的 Version 1，合併回 main。原始碼在 [ChrisTorng/bdd-tic-tac-toe](https://github.com/ChrisTorng/bdd-tic-tac-toe)，線上執行網頁在 [井字遊戲](https://bdd-tic-tac-toe.vercel.app/)。以上 Vercel 的 PR 佈署版本連結應該要登入我的帳號才能開啟。真有興趣的人就請拉下 PR 2 來本機執行看看。
+
+其實我也沒回頭搞清楚 Version 1 為何在無法 `npm install` 的情況下仍能建立 `package-lock.json` (Version 2 是拉 [PR #2](https://github.com/ChrisTorng/bdd-tic-tac-toe/pull/2) 到本機開發來修正此問題的) (目前基本上是猜測 Vercel 可以不靠 `package-lock.json` 完成安裝，而原本的 GitHub Action 設定要使用 `npm ci` 安裝)。但我本來就想在不審查程式碼的情況下完成工作，現在也不想再探究了。
+
+## 結論
+
+最後結果是完全雲端開發的版本被接受，拉回本機開發的版本被放棄。依這一次的開發驗來看:
+
+- 兩個版本非常接近，不像以往製作 3D 手機網頁般，每次有很大差異，我認為規格文件的功勞很大。<br/>
+   => 可見我先前製作的 8 個版本 3D 手機網頁成品: [v1](https://3d-phone-show.vercel.app/) [v2](https://3d-phone-show4.vercel.app/) [v3](https://3d-phone-show3.vercel.app/) [v4](https://3d-phone-show4.vercel.app/) [v5](https://christorng.github.io/3d-phone-show5/) [v6](https://christorng.github.io/3d-phone-show6/) [v7](https://christorng.github.io/3d-phone-show7/) [v8](https://3d-phone-show8.vercel.app/)。其中 v7 還有[《GitHub Copilot 進階實戰及策略》課程錄影](https://christorng.substack.com/p/advanced-github-copilot-recording)，包括對話聊天字幕處理經驗，沒看過的可以前往了解看看
+- 雲端 Codex Cloud + Vercel 佈署是我目前的推薦作法。
+- 其實我對這些作業都還不熟，但後續多練習後，應該有可能全雲端完成。
+- 全雲端的最大優勢，除了不用本機安裝開發環境，還有不管它怎麼浪費或搞壞環境，也是別人的虛擬機器，因此可以放心使用 YOLO (You Only Live Once) mode 的 Agent 模式，讓它全自動執行，不必再讓人一步一步允許執行。
+- 目前的 Codex Cloud 還是給開發人員用的，非開發人員應該也可以多練習後上手。
+- 應該可以再推出更適合非開發人員使用 Cucumber + Gherkin 的雲端工具，讓更多沒有技術背景人可以使用 BDD 來開發。
+
+使用 BDD + AI Agents 開發，是否真的有可能再也不需要開發人員了呢?
