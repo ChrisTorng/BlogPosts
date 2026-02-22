@@ -1,0 +1,312 @@
+# 20260110 Google Legend: The Jeff Dean Facts
+# 20260110 Google 神人 Jeff Dean 趣聞集  
+**超越不可能的世界一督**  
+
+![](<Images/ChatGPT Image Jan 10, 2026, 09_59_51 AM.png>)  
+
+(註: 這篇應該在十天前就發出的...先前我漏掉忘了發出)
+
+[LRitzdorf/TheJeffDeanFacts: A consolidated list of the Jeff Dean Facts!](https://github.com/LRitzdorf/TheJeffDeanFacts)  
+
+看 [Jeff Dean](https://en.wikipedia.org/wiki/Jeff_Dean) 說是 Google 最高技術地位兩位其一，其豐功偉業獲得很多誇張傳說。裡面有些我也看不太懂，包括最前面還有一個 Chuck Norris 的也不懂 (不知道 revolving door 是什麼)。  
+
+請 ChatGPT 翻譯並解釋後得到:  
+
+**Chuck Norris can slam a revolving door.**  
+Chuck Norris 可以把旋轉門「砰」地關上。  
+旋轉門沒有「關門」這個狀態，這句話的笑點在於他能違反物理與語義定義本身。  
+
+1.  **Jeff Dean proved that P=NP when he solved all NP problems in polynomial time on a whiteboard.**  
+    Jeff Dean 在白板上用多項式時間解完所有 NP 問題，因此證明了 P=NP。  
+    以理論計算機科學梗誇張他的能力：若能把所有 NP 問題都變成多項式時間可解，就等同證明 P=NP；「在白板上」更強調荒謬程度。  
+2.  **Jeff Dean's PIN is the last 4 digits of pi.**  
+    Jeff Dean 的 PIN 碼是圓周率 π 的最後 4 位數。  
+    π 是無限不循環小數，根本不存在「最後 4 位」。用不可能性暗示他的密碼學/數學能力超越常理。  
+3.  **When Jeff gives a seminar at Stanford, it's so crowded Don Knuth has to sit on the floor. (TRUE)**  
+    Jeff 在史丹佛演講時人多到 Donald Knuth 都只能坐地上。（真實）  
+    以「程式設計教父」Knuth 也得屈就，凸顯 Jeff 的影響力；(TRUE) 表示這條在內部傳說中被認為真的發生過。  
+4.  **Jeff Dean once bit a spider, the spider got super powers and C++ readability.**  
+    Jeff Dean 曾咬了一隻蜘蛛，結果蜘蛛獲得超能力以及 C++ 的 readability（可讀性認證）。  
+    反轉蜘蛛人設定：不是人被咬得超能力，而是蜘蛛被咬；再把 Google 內部「語言 readability 認證」當成超能力。  
+5.  **Once, in early 2002, when the index servers went down, Jeff Dean answered user queries manually for two hours. Evals showed a quality improvement of 5 points.**  
+    2002 年初某次索引伺服器掛掉時，Jeff Dean 手動回答使用者查詢連續兩小時；評測顯示品質還提升了 5 分。  
+    把「搜尋系統輸出」誇張成 Jeff 親自人工回覆，而且比系統更好，影射他對相關性/排序理解深到像人肉搜尋引擎。  
+6.  **Jeff Dean got promoted to level 11 in a system where max level is 10. (TRUE)**  
+    Jeff Dean 在最高等級只有 10 的職等系統裡被升到 11。（真實）  
+    「超出上限」的神話型誇張；(TRUE) 暗示他在 Google 的職涯躍升真的非常不尋常。  
+7.  **Google Search was Jeff Dean's Noogler Project.**  
+    Google 搜尋是 Jeff Dean 的新人工程師（Noogler）入職專案。  
+    Noogler project 通常是小而可控的入門任務；把整個 Google Search 說成入門作業，誇張到荒謬。  
+8.  **Jeff Dean has punch card readability.**  
+    Jeff Dean 具有穿孔卡（punch card）的 readability。  
+    Readability 本是內部代碼審查/語言風格認證；把年代久遠的穿孔卡也納入，表示他強到跨越世代與媒介。  
+9.  **Jeff Dean puts his pants on one leg at a time, but if he had more than two legs, you would see that his approach is actually** `**O(log n)**`**.**  
+    Jeff Dean 也是一次穿一條褲管；但如果他有超過兩條腿，你會發現他的作法其實是 `O(log n)`。  
+    典型「他也很凡人」開頭，立刻用時間複雜度梗翻盤：穿褲子都能從線性變對數時間，暗示他做任何事都能最佳化。  
+10. **Jeff Dean acquired Sawzall readability after writing 58 lines of Sawzall code. As part of his readability review, he pointed out a flaw in the style guide which was promptly corrected by the reviewer.**  
+    Jeff Dean 寫了 58 行 Sawzall（Google 內部資料處理語言）就拿到 Sawzall readability；在審查中他還指出風格指南的瑕疵，審查者立刻更正。  
+    以極少代碼量拿到認證已很誇張；更誇張的是「被審的人」反過來糾正文檔，暗示他比規則本身更權威。  
+11. **Sanjay once asked Jeff Dean if he could keep the entire web in his memory. Due to the noise from his keyboard cooling fan, Jeff Dean misheard slightly and wrote Mustang instead of simply answering "Yes".**  
+    Sanjay 曾問 Jeff Dean 能否把整個網路都記在腦中；因為鍵盤散熱風扇太吵，Jeff 聽錯了一點點，於是寫了 Mustang，而不是只回答「可以」。  
+    影射 Sanjay Ghemawat（Jeff 長期搭檔）也被他震懾；笑點在「Yes」的回答已足夠狂，結果他直接寫出 Google 內部大型系統 Mustang（或代指任一大型專案）當作回答。  
+12. **Jeff Dean compiles and runs his code before submitting, but only to check for compiler and CPU bugs.**  
+    Jeff Dean 在送出程式碼前會編譯並執行，但只是為了檢查編譯器和 CPU 的 bug。  
+    反轉常識：一般人是怕自己寫錯；他是怕工具鏈/硬體寫錯。  
+13. **Unsatisfied with constant time, Jeff Dean created the world's first** `**O(1/n)**` **algorithm.**  
+    不滿足於常數時間，Jeff Dean 創造了世界上第一個 `O(1/n)` 演算法。  
+    時間複雜度理論梗：`O(1)` 已是常見下限語感；`O(1/n)` 等於「輸入越大越快」，在一般模型下荒謬，用來凸顯他「打破理論界線」。  
+14. **Jeff Dean has binary readability.**  
+    Jeff Dean 具有二進位的 readability。  
+    把可讀性審查推到極致：不是高階語言，而是機器碼/位元層級也「可讀」。  
+15. **Jeff Dean has binary writability.**  
+    Jeff Dean 具有二進位的 writability（可寫性）。  
+    不只看得懂機器碼，還能直接「寫」位元級程式，暗示他可以徒手寫可執行檔。  
+16. **When Jeff Dean goes on vacation, production services across Google mysteriously stop working within a few days. This is actually true. (TRUE)**  
+    Jeff Dean 一去度假，Google 各種線上服務就會在幾天內離奇故障；這其實是真的。（真實）  
+    影射他對生產系統的關鍵程度：他在時系統穩，他不在就出事；(TRUE) 表示此梗可能源自真實事件/觀察。  
+17. **Jeff Dean once shifted a bit so hard it ended up on another computer.**  
+    Jeff Dean 有次把一個位元 shift 得太用力，結果它跑到另一台電腦上。  
+    位移運算（bit shift）被擬人化成物理位移，誇張到穿越機器邊界，影射他對底層操作強到「跨機」。  
+18. **During his own Google interview, Jeff Dean was asked the implications if P=NP were true. He said "P = 0 or N = 1." Then, before the interviewer had even finished laughing, Jeff examined Google's public certificate and wrote the private key on the whiteboard.**  
+    Jeff Dean 面試 Google 時被問「若 P=NP 為真有何意涵？」他回答「P=0 或 N=1」。面試官還沒笑完，他就看了 Google 的公開憑證，直接在白板寫出私鑰。  
+    第一段是把「P=NP」當代數式亂解的冷笑話；第二段把公開金鑰基礎設施（PKI）當成可從公鑰推回私鑰，暗示他能破解密碼學。  
+19. **You use 10% of your brain. The other 90% is running one of Jeff's mapreduce jobs.**  
+    你只用了 10% 的大腦；另外 90% 正在跑 Jeff 的某個 MapReduce 工作。  
+    以「人只用 10% 大腦」都市傳說改寫，加入 MapReduce（分散式批次計算）梗，暗示他的工作量大到佔用所有算力。  
+20. **Jeff Dean's resume lists the things he hasn't done; it's shorter that way.**  
+    Jeff Dean 的履歷列的是他「沒做過的事」，因為那樣比較短。  
+    用反向集合誇張成就多到列不完。  
+21. **To Jeff Dean, "NP" means "No Problemo".**  
+    對 Jeff Dean 而言，「NP」代表「沒問題」（No Problemo）。  
+    把 NP（Nondeterministic Polynomial time）降維成口語，笑點在他把理論難題當日常。  
+22. **Jeff Dean wrote an** `**O(n^2)**` **algorithm once. It was for the Traveling Salesman Problem.**  
+    Jeff Dean 曾寫過一次 `O(n^2)` 的演算法；那是用來解旅行推銷員問題（TSP）。  
+    TSP 通常被視為困難（NP-hard），常見精確解法指數級；他卻用平方時間搞定，誇張到違反直覺。  
+23. **You don't explain your work to Jeff Dean. Jeff Dean explains your work to you.**  
+    你不用向 Jeff Dean 解釋你的工作；是 Jeff Dean 來向你解釋你的工作。  
+    影射他理解力強到能比作者更懂作者。  
+24. **Jeff Dean's resume has so many accomplishments, it has a table of contents.**  
+    Jeff Dean 的履歷成就多到需要目錄。  
+    誇張履歷篇幅，暗示其貢獻巨大。  
+25. **Jeff Dean was forced to invent asynchronous APIs one day when he optimized a function so that it returned before it was invoked.**  
+    Jeff Dean 有天被迫發明非同步 API，因為他把一個函式最佳化到「還沒被呼叫就已經回傳」。  
+    用因果倒置形容極致效能最佳化；也影射 async/await 等非同步模型。  
+26. **The rate at which Jeff Dean produces code jumped by a factor of 40 in late 2000 when he upgraded his keyboard to USB2.0.**  
+    Jeff Dean 寫程式的速度在 2000 年末暴增 40 倍，因為他把鍵盤升級到 USB 2.0。  
+    把吞吐瓶頸怪到 I/O：好像他打字快到介面頻寬限制產能。  
+27. **When Jeff Dean designs software, he first codes the binary and then writes the source as documentation.**  
+    Jeff Dean 設計軟體時先寫二進位，然後再把原始碼當作說明文件補上。  
+    把「source of truth」顛倒：原始碼不再是主要產物，而是註解等級；強調他直接操作機器層。  
+28. **Jeff Dean's Peer Review is what got Larry promoted to CEO.**  
+    Larry（Page）之所以升任 CEO，是因為 Jeff Dean 給他的同儕審查（Peer Review）。  
+    借用企業職涯評等語境，誇張 Jeff 的影響力大到左右創辦人升遷。  
+29. **When God said: "Let there be light!", Jeff Dean was there to do the code review.**  
+    上帝說「要有光」時，Jeff Dean 在場負責做 code review。  
+    把創世神話套進工程流程，暗示連上帝的變更也要他審。  
+30. **When Graham Bell invented the telephone, he saw a missed call from Jeff Dean**  
+    葛拉漢貝爾發明電話時，看到 Jeff Dean 的未接來電。  
+    時間悖論梗：Jeff 早在電話出現前就能打來，影射他「永遠領先時代」。  
+31. **Compilers don't warn Jeff Dean. Jeff Dean warns compilers.**  
+    編譯器不會警告 Jeff Dean；是 Jeff Dean 在警告編譯器。  
+    反轉主從：他比工具鏈更懂規則與缺陷。  
+32. **Jeff Dean doesn't exist, he's actually an advanced AI created by Jeff Dean.**  
+    Jeff Dean 根本不存在；他其實是 Jeff Dean 自己打造的高階 AI。  
+    自指悖論式誇張：連「自己」都是自己造的，影射其工程能力無上限。  
+33. **Jeff Dean's IDE doesn't do code analysis, it does code appreciation.**  
+    Jeff Dean 的 IDE 不做程式分析，只做程式讚賞（appreciation）。  
+    暗示他寫的 code 完美到工具只能稱讚，無需靜態分析抓問題。  
+34. **Jeff Dean doesn't use ECC memory. He anticipates cosmic rays and uses them to improve performance.**  
+    Jeff Dean 不用 ECC 記憶體；他能預判宇宙射線，並把它們用來提升效能。  
+    ECC 用來更正位元翻轉；這句把硬體錯誤變成可控資源，誇張他的低階掌控力。  
+35. **Jeff Dean once failed a Turing test when he correctly identified the 203^{rd} Fibonacci number in less than a second.**  
+    Jeff Dean 曾在圖靈測試中失敗，因為他在不到一秒內正確說出第 203 個費波那契數。  
+    圖靈測試要「像人」；他算太快反而像機器，笑點在「太強所以不像人」。  
+36. **Jeff Dean invented Bigtable so that he would have a place to send his weekly snippets.**  
+    Jeff Dean 發明 Bigtable 只是為了有地方寄放他每週的程式片段。  
+    Bigtable 是大型分散式儲存系統；把其存在理由降格成個人小需求，反差製造笑點。  
+37. **On the zeroth day, Jeff Dean created God.**  
+    在第零天，Jeff Dean 創造了上帝。  
+    比創世更早，暗示他才是「上游依賴」。  
+38. **Jeff Dean once implemented a web server in a single printf() call. Other engineers added thousands of lines of explanatory comments but still don't understand exactly how it works. Today that program is known as Google Web Server.**  
+    Jeff Dean 曾用一行 printf() 就實作出網頁伺服器；其他工程師後來加了幾千行註解仍看不懂它怎麼運作。如今那程式被稱為 Google Web Server。  
+    用「一行 code 寫出整個伺服器」誇張他的天才；「加註解仍不懂」嘲諷可讀性與魔法般最佳化。  
+39. **When Jeff has an ergonomic evaluation, it is for the protection of his keyboard.**  
+    Jeff 做人體工學評估時，是為了保護他的鍵盤。  
+    一般是保護人；這裡變成鍵盤承受不了他的輸出強度。  
+40. **Jeff Dean can beat you at connect four. In three moves.**  
+    Jeff Dean 下四子棋能在三步內打敗你。  
+    四子棋理論上需要更多步數才會決勝；用不可能步數暗示他能「超前收斂」或迫使必勝局面。  
+41. **Jeff Dean invented BigTable because his resume was too big to fit anywhere else.**  
+    Jeff Dean 發明 BigTable 是因為他的履歷太大，其他地方放不下。  
+    再次用「基礎設施級系統」對比「個人文件」做反差梗。  
+42. **Jeff Dean took the bite out of Apple's logo.**  
+    蘋果 logo 上那一口是 Jeff Dean 咬的。  
+    把品牌設計梗扯到他身上，延伸第 4 條「咬蜘蛛」的超能力隱喻。  
+43. **Chuck Norris can kill you. Jeff Dean can** `**kill -9**` **you.**  
+    Chuck Norris 能殺了你；Jeff Dean 能對你下 `kill -9`。  
+    `kill -9` 是 Unix 強制終止訊號；把「殺」翻成系統層級的「強殺進程」，偏工程師內梗。  
+44. **Jeff Dean can parse HTML with a regular expression...correctly.**  
+    Jeff Dean 能用正規表示式解析 HTML......而且還能解析正確。  
+    經典工程梗：「不要用 regex 解析 HTML」；他卻能違反最佳實務仍成功，誇張其能力。  
+45. **When Jeff has trouble sleeping, he MapReduces sheep.**  
+    Jeff 睡不著時會用 MapReduce 來「數羊」。  
+    把數羊這件事也分散式平行化，影射他連放空都像在跑大資料作業。  
+46. **When Jeff Dean fires up the profiler, loops unroll themselves in fear.**  
+    Jeff Dean 一開 profiler，迴圈就因害怕而自行 unroll。  
+    迴圈展開（loop unrolling）是編譯器最佳化；這裡擬人化為「怕被他抓到效能問題」。  
+47. **When your code has undefined behavior, you get a seg fault and corrupted data. When Jeff Dean's code has undefined behavior, a unicorn rides in on a rainbow and gives everybody free ice cream.**  
+    你的程式出現未定義行為會 segfault、資料毀損；Jeff Dean 的程式出現未定義行為時，獨角獸會踏著彩虹送大家免費冰淇淋。  
+    以極端對比嘲諷未定義行為的可怕；同時神化 Jeff：連 UB 都能帶來好事。  
+48. **Jeff doesn't sleep, he just sends SIGSUSPEND to the universe.**  
+    Jeff 不睡覺；他只是對宇宙送出 SIGSUSPEND。  
+    SIGSUSPEND 代表暫停行程；把睡眠變成對整個宇宙的「暫停」系統呼叫。  
+49. **Jeff got Java readability with only 8 lines of code.**  
+    Jeff 只寫了 8 行 Java 就拿到 Java readability。  
+    以極少貢獻取得認證，誇張他的審查速度/品質或權威性。  
+50. **Jeff Dean can instantiate abstract classes.**  
+    Jeff Dean 能把抽象類別直接 new 出來。  
+    抽象類別不可被實例化是語言規則；他能「破規則」，象徵他不受限制。  
+51.  `**gcc -O4**` **sends your code to Jeff Dean for a complete rewrite.**  
+    `gcc -O4` 會把你的程式送去給 Jeff Dean 全面重寫。  
+    gcc 常見到 `-O3`；虛構 `-O4` 當作「請 Jeff 來改寫」的超級最佳化等級。  
+52. **Jeff can recite 20,000 digits of pi in 5 hours. He doesn't remember them; he just recomputes them on the fly using only** `**O(log n)**` **space.**  
+    Jeff 能在 5 小時背出 π 的 20,000 位；他不是記住，而是用只有 `O(log n)` 空間即時計算出來。  
+    把「背誦」改成「即時計算」，還強調空間複雜度，暗示他的大腦像最佳化過的演算法。  
+53. **Jeff Dean remembers only one password. For each site, he concatenates it with the site name, computes its SHA-256 hash, and then types the result.**  
+    Jeff 只記一組密碼；每個網站他就把密碼和站名串接後做 SHA-256，再把雜湊結果打進去。  
+    把密碼管理變成加密雜湊流程，誇張他的資安習慣與心算/即時計算能力。  
+54. **Jeff Dean is still waiting for mathematicians to discover the joke he hid in the digits of pi.**  
+    Jeff Dean 還在等數學家發現他藏在 π 小數位裡的笑話。  
+    以「在無限數列裡埋訊息」的幻想梗，暗示他能操控/設計 π 的數字。  
+55. **There is no** `**Ctrl**` **key on Jeff Dean's keyboard. Jeff Dean is always in control.**  
+    Jeff Dean 的鍵盤沒有 `Ctrl` 鍵；因為 Jeff 永遠都在掌控中。  
+    把控制鍵雙關成「控制力」。  
+56. **Jeff Dean was born on December 31, 1969 at 11:48 PM. It took him twelve minutes to implement his first time counter.**  
+    Jeff Dean 出生於 1969/12/31 23:48；他花了 12 分鐘實作出第一個時間計數器。  
+    Unix epoch 是 1970/01/01 00:00；他出生在 epoch 前 12 分鐘，接著「寫出時間」讓 epoch 得以成立，屬經典 Unix 梗。  
+57. **When Jeff Dean says "Hello World", the world says "Hello Jeff".**  
+    Jeff Dean 說「Hello World」時，世界回他「Hello Jeff」。  
+    反轉入門程式輸出：世界對他有回應，象徵其影響力。  
+58. **Jeff Dean can get 1s out of** `**/dev/zero**`**.**  
+    Jeff Dean 能從 `/dev/zero` 讀出 1。  
+    `/dev/zero` 理應只輸出 0；他能違反裝置語義，暗示他能扭曲系統規則。  
+59. **Jeff Dean simply walks into Mordor.**  
+    Jeff Dean 可以「直接走進魔多」。  
+    取自《魔戒》名梗「One does not simply walk into Mordor」；用來說他能輕易完成不可能任務。  
+60. **Jeff Dean spent some 20% time on an AI project. That produced Urs Hoelzle.**  
+    Jeff Dean 用 20% 時間做了一個 AI 專案，結果產出了 Urs Hölzle。  
+    Google「20% time」文化梗；把 AI 專案成果誇張成「做出一個人」（Google 資深高層/基礎設施領袖 Urs），荒謬反差。  
+61. **Google once had to move out of a datacenter after Jeff Dean accidentally compressed the index so densely that a black hole was formed.**  
+    Google 曾因 Jeff Dean 不小心把索引壓縮得太密，形成黑洞，只好搬離資料中心。  
+    以資料密度誇張到引力坍縮，影射他壓縮/索引最佳化能力強到扭曲物理。  
+62. **Jeff starts his programming sessions with** `**cat > /dev/mem**`**.**  
+    Jeff 開始寫程式時會先做 `cat > /dev/mem`。  
+    `/dev/mem` 是直接存取實體記憶體的介面（類 Unix）；意思是他直接把輸入寫進記憶體，象徵極度底層、極度危險但他能駕馭。  
+63. **The speed of light in a vacuum used to be about 35 mph. Then Jeff Dean spent a weekend optimizing physics.**  
+    真空中的光速以前大約是 35 英里/小時；直到 Jeff Dean 花一個週末把物理學最佳化。  
+    用效能最佳化梗套到自然常數，表示他連宇宙規則都能加速。  
+64. **When Jeff Dean sends you a code review, it's because he thinks there's something in it you should learn.**  
+    Jeff Dean 會給你 code review，是因為他覺得你應該從中學點東西。  
+    反轉權力關係：不是他需要檢查你的 code，而是他「施教」給你機會成長。  
+65. **Jeff Dean does not** `**sleep()**`**, he** `**wait()**`**s.**  
+    Jeff Dean 不會 `sleep()`，他只會 `wait()`。  
+    `sleep()` 是單純延遲；`wait()` 通常等待子行程/事件完成，暗示他休息也保持同步控制與效率。  
+66. **Jeff Dean invented MapReduce so he could sort his fan mail.**  
+    Jeff Dean 發明 MapReduce 是為了整理粉絲信。  
+    再次用超大型系統對比雞毛蒜皮需求，凸顯反差。  
+67. **Once Jeff Dean ordered a list, and the list obeyed him.**  
+    Jeff Dean 有次對一個 list 下令，list 就服從了。  
+    「order」雙關：排序（order a list）與命令（order）。笑點是資料結構像有意志會聽他話。  
+68. **Chuck Norris is Jeff Dean's 20% project.**  
+    Chuck Norris 是 Jeff Dean 的 20% 專案。  
+    把 Chuck Norris 這個「超人梗本體」降格為 Jeff 的副業成果，進一步抬高 Jeff。  
+69. **When your code is killed by SIGJEFF, it never runs again.**  
+    你的程式若被 SIGJEFF 殺掉，就再也跑不起來。  
+    虛構訊號 SIGJEFF，暗示他能做到比 SIGKILL 更徹底的終止：連重啟都不可能。  
+70. **Jeff Dean's calendar goes straight from March 31^{st} to April 2^{nd}; no one fools Jeff Dean.**  
+    Jeff Dean 的行事曆會從 3/31 直接跳到 4/2；沒人能在 4/1 愚弄他。  
+    4/1 愚人節梗：他直接把那天「刪掉」，象徵他不會被騙。  
+71. **Jeff Dean never has the wrong number; you have the wrong phone.**  
+    Jeff Dean 從不會打錯電話；是你拿錯手機。  
+    典型「錯不在他」神話梗，強調他永遠正確。  
+72. **Jeff Dean has exactly two keys on his keyboard:** `**0**` **and** `**1**`**.**  
+    Jeff Dean 的鍵盤只有兩個鍵：`0` 和 `1`。  
+    暗示他直接輸入二進位寫程式，不需要其他字符。  
+73. **Errors treat Jeff Dean as a warning.**  
+    錯誤（error）把 Jeff Dean 當成警告（warning）。  
+    在編譯器/系統語境中 warning 比 error 輕；這句表示連錯誤都不敢真的阻擋他。  
+74. **Cricket matches used to take 5 days, until Jeff optimized them.**  
+    板球比賽以前要打 5 天，直到 Jeff 把它最佳化。  
+    板球（Test cricket）確實可能長達 5 天；把規則/賽事當程式來最佳化，誇張他的「能優化任何流程」。  
+75. **Jeff Dean's watch displays seconds since January 1st, 1970. He is never late.**  
+    Jeff Dean 的手錶顯示自 1970/01/01 以來的秒數；他永遠不會遲到。  
+    Unix time 梗：用 epoch 秒當時間顯示，暗示他以系統時間尺度精準行動。  
+76. **Jeff's code is so fast the assembly code needs three HALT opcodes to stop it.**  
+    Jeff 的程式快到連組合語言都需要三個 HALT 指令才能停下來。  
+    HALT 是停機指令；用「停不住」形容極端效能與慣性，誇張到不合硬體現實。  
+77. **Emacs' preferred editor is Jeff Dean.**  
+    Emacs 最偏好的編輯器是 Jeff Dean。  
+    反諷「編輯器之戰」：不是人選編輯器，而是連編輯器都選他；也暗示他是終極工具。  
+78. **Google: it's basically a Jeff Dean's side project.**  
+    Google 基本上就是 Jeff Dean 的副業。  
+    把整間公司降格成他順手做的 side project，極致抬高個人影響力。  
+79. **Jeff Dean has to unoptimize his code so that reviewers believe it was written by a human.**  
+    Jeff Dean 得把程式「反最佳化」，審查者才相信是人寫的。  
+    暗示他寫出的 code 太完美/太像機器產物，不降速降巧就「不夠像人」。  
+80. **Websearch is just a large unittest Jeff wrote for his real app.**  
+    網頁搜尋只是 Jeff 為了他真正的應用寫的一個大型單元測試。  
+    把核心產品降格成測試程式，暗示他真正的目標更宏大。  
+81. **Jeff Dean doesn't need speakers or headphones. He just types** `**cat *.mp3**`**, glances at the screen, and his brain decodes the music in the background while he works.**  
+    Jeff Dean 不需要喇叭或耳機；他只要打 `cat *.mp3`，瞄一眼螢幕，他的大腦就能在背景解碼音樂同時工作。  
+    mp3 是壓縮格式，`cat` 只會輸出位元流；笑點是他能「用眼睛聽音樂」、腦內即時解碼。  
+82. **Jeff Dean has Perl Readability. (TRUE)**  
+    Jeff Dean 有 Perl 的 Readability。（真實）  
+    Perl 以可讀性梗聞名（「write-only language」刻板印象）；(TRUE) 暗示他確實擁有相關內部認證。  
+83. **Jeff Dean quicksorts his laundry.**  
+    Jeff Dean 用 quicksort 來整理（分類）他的衣物。  
+    把日常分類用演算法表述，暗示他連家務都用最佳化思維。  
+84. **The OR ELSE construct had to be removed from ISO C after Jeff Dean used it in Mustang and kernels started panicking in terror.**  
+    Jeff Dean 在 Mustang 裡用了 OR ELSE 結構後，核心（kernel）嚇到恐慌，ISO C 只好把 OR ELSE 從標準移除。  
+    虛構語言特性 + 內部系統名；把核心 panic 擬人化成「恐懼」，誇張他用法太猛以致規格都得改。  
+85. **Jeff Dean is not afraid of evil constructors. They are afraid of him.**  
+    Jeff Dean 不怕邪惡的建構子；是建構子怕他。  
+    「evil constructor」指有副作用或危險初始化行為的程式碼味道；笑點在反轉恐懼關係。  
+86. **Jeff Dean doesn't write bugs, just features you are unable to understand.**  
+    Jeff Dean 不寫 bug；只有你看不懂的功能。  
+    常見梗：把錯誤合理化成「你理解不足」，用來神化作者。  
+87. **Jeff Dean eschews both Emacs and VI. He types his code into** `**zcat**`**, because it's faster that way.**  
+    Jeff Dean 既不用 Emacs 也不用 VI；他把程式直接打進 `zcat`，因為那樣更快。  
+    `zcat` 是用來解壓縮/輸出內容的工具，不是編輯器；用錯工具卻「更快」的荒謬感，強化他無視常規。  
+88. **When Jeff Dean sends an Ethernet frame, there are no collisions because the competing frames retreat back up into the buffer memory on their source network cards.**  
+    Jeff Dean 送出乙太網路 frame 時不會發生碰撞，因為其他 frame 會退回到來源網卡的緩衝區。  
+    以 CSMA/CD 的「碰撞」概念擬人化：別人的封包看到他就退讓，暗示他在網路層也有支配力。  
+89. **Jeff once simultaneously reduced all binary sizes by 3% and raised the severity of a previously known low-priority Python bug to critical-priority in a single change that contained no Python code.**  
+    Jeff 曾在一次變更中同時讓所有二進位檔縮小 3%，並把一個已知的低優先 Python bug 嚴重度提升到 critical；而該變更裡完全沒有 Python 程式碼。  
+    典型「牽一髮動全身」工程神話：改了某個底層或流程，連 Python bug 的嚴重度都被迫上調；笑點在跨域影響與「沒碰 Python 卻改變 Python 命運」。  
+90. **One day, Jeff Dean grabbed his Etch-a-Sketch instead of his laptop on his way out the door. On his way back home to get his real laptop, he programmed the Etch-a-Sketch to play Tetris.**  
+    某天 Jeff 出門拿錯了 Etch A Sketch（兒童畫板）而不是筆電；他回家拿真正筆電的路上，就把 Etch A Sketch 寫成能玩俄羅斯方塊。  
+    用「在極受限硬體上實作 Tetris」誇張其嵌入式/低階能力；還順帶嘲諷：拿錯工具也能完成大作。  
+91. **The x86-64 spec includes several undocumented instructions marked private use. They are actually for Jeff Dean's use.**  
+    x86-64 規格裡有幾個未公開、標示為私用的指令；其實是給 Jeff Dean 用的。  
+    影射 CPU 指令集也為他留後門，誇張到硬體供應鏈級別。  
+92. **Knuth mailed a copy of The Art of Computer Programming to Google. Jeff Dean autographed it and mailed it back.**  
+    Knuth 把《電腦程式設計藝術》寄到 Google；Jeff Dean 簽名後寄回去。  
+    反轉師徒：Knuth 是作者/權威，卻像粉絲寄書求簽名；突顯 Jeff 的傳奇地位。  
+93. **When he heard that Jeff Dean's autobiography would be exclusive to the platform, Richard Stallman bought a Kindle.**  
+    Richard Stallman 聽說 Jeff Dean 自傳會在某平台獨占後，居然去買了 Kindle。  
+    Stallman 以反 DRM/反專有平台形象著稱；笑點是 Jeff 的吸引力大到讓他破例。  
+94. **Jeff Dean can losslessly compress random data.**  
+    Jeff Dean 能把隨機資料做無損壓縮。  
+    資訊理論上隨機資料不可再壓縮（已近熵上限）；他卻能辦到，象徵打破理論極限。  
+95. **When asked if the facts about him are true, Jeff Dean responded with "111111". While the interviewer was still trying to figure out what he meant, he clarified, "every single bit of it is true."**  
+    被問到這些傳聞是否為真時，Jeff Dean 回答「111111」；面試官還在想意思時，他補充：「每一個 bit 都是真的。」  
+    「111111」同時像二進位的「全為 1」與口語「全都是真的」；把真假用位元語言表達。  
+96. **Jeff Dean mines bitcoins. In his head.**  
+    Jeff Dean 挖比特幣是在腦中挖的。  
+    挖礦需要大量雜湊運算；這句把算力擬人化到「腦內 ASIC」。  
+97. **Jeff Dean traps the KILL signal.**  
+    Jeff Dean 能攔截（trap）KILL 訊號。  
+    在 Unix 中 SIGKILL（-9）通常不可被捕捉/忽略；他卻能 trap，代表他甚至能凌駕作業系統的硬限制。  
+98. **Jeff Dean's programs don't SEGFAULT. The memory rearranges itself in order to put data and code where it belongs.**  
+    Jeff Dean 的程式不會 SEGFAULT；記憶體會自行重新排列，把資料和程式碼放到該在的位置。  
+    segfault 代表非法記憶體存取；這裡把錯誤責任推給「記憶體自我修正」來迎合他的程式，神化到物理層配合。  
