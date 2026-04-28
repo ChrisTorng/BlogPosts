@@ -1,0 +1,59 @@
+# 2026/4/28 GitHub Copilot 計畫豬羊變色
+# 2026/4/28 GitHub Copilot Plan Big Changes
+**養套殺現形! 你被套牢了嗎!?**
+
+![](<Images/ChatGPT Image Apr 28, 2026, 08_04_53 AM.png>)
+
+不到一個月前 (2026/4/1) 我寫的 [AI 成癮者的未來](https://christorng.substack.com/p/the-future-of-ai-addicts) 裡預測:
+
+> 你已經 AI 成癮，無法回到沒有 AI 的世界了嗎?
+
+> 對於習慣依賴 AI，已經生成大量人力無法理解維護之程式的工程師而言，要不忍痛花更多錢訂閱服務，要不只能忍受較低等級 AI 的愚蠢，以及經常的無意破壞後再救火的循環。然後遇到更常發生且為時更久的限流時，什麼事都做不了。當初 AI 助攻的衝勁，如今變成拖垮士氣的元兇。這些人已經很難回到手工慢慢撰寫程式的階段，寫程式開始變成痛苦的任務。
+
+## GitHub Copilot 帶頭衝
+
+現在 (2026/4/28) GitHub Copilot 打出明確的第一砲:
+- [GitHub Copilot is moving to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/)
+- [Models and pricing for GitHub Copilot](https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing#model-multipliers-for-annual-copilot-pro-and-copilot-pro-subscribers)
+- [Usage-based billing for individuals](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals)
+- [Usage-based billing for organizations and enterprises](https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises)
+- [Setting up budgets to control spending on metered products](https://docs.github.com/en/billing/how-tos/set-up-budgets)
+- [GitHub Copilot is moving to usage-based billing](https://github.com/orgs/community/discussions/192948)
+- 參考 2026/4/20 舊聞: [Changes to GitHub Copilot Individual plans](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/)
+
+2026/6/1 起方案大幅變更:
+
+- Pro/Pro+ 月費制不再以請求次數及模型乘數為基礎 (每次要求塞大入量任務要求，執行越久越划算)，轉為 GitHub AI credits 模型積分，用多少算多少，超額當然仍可加購
+- 先前 Pro/Pro+ 年訂制就已經暫停銷售，6/1 起年訂制一樣要面臨乘數大幅上漲，前三個月提供超額 AI 模型積分 (約 1/3) 以利轉換。已經不會有年費制，因此到期後要不轉為月費制，要不就轉為免費帳戶，或者隨時可取消並按比例退款  
+ (已經沒有 0 點模型，改為 0.33~1，1 點改為 1~9，最貴的 Opus 4.7 由 7.5 點改為 27 點，表中還沒看到 GPT-5.5。最誇張的是 GPT-5.4 mini 由 0.33 轉為 6，暴增 18 倍，但 GPT-5.4 竟跟 mini 同乘數)
+- 沒有免費版了
+- Business/Enterprise 訂閱制一樣算 AI credits 模型積分，一樣提供前三個月超額用量 (約 1/3) 以利轉換
+- Business/Enterprise 訂閱制現在可以組織內不同人流用，也就是高用量的人可佔用低用量人的額度 (代表有人用得兇把額度先吃掉了，其他人就只能少用，要不就是提高組織預算)，但可為 個人/組織單位/專案 設定用量上限
+- 最原始的 Code completions 及後來的 Next Edit suggestions 用量很低，仍不計量
+- 先前用完每月點數，還有 0 點模型可以繼續用，現在完全依用量，沒了就沒了
+- Code review 還要額外消耗 GitHub Actions 用量分鐘數，當然一樣有限額
+- 五月內會推出預覽帳單體驗，可登入 github.com 後查閱
+
+## 推測後續影響
+
+不到一年前 (2025/6/18 起，參考 [GitHub Copilot 模型選擇策略](https://christorng.substack.com/p/github-copilot-model-selection-strategy) 及 [6/18 (三) GitHub Copilot (預計再次) 開始計點](https://christorng.substack.com/p/github-copilot-premium-requests-starting))，GitHub Copilot 才由幾乎完全無限制，改為點數 (依請求次數) 方案，當時當然被罵翻天。現在又改為積分 (用多少算多少) 方案，當然又要引來一陣撻伐，但罵的人要 換家/退掉 嗎? 還是只能乖乖繼續用?
+
+先前的點數表 (參考 [Requests in GitHub Copilot](https://docs.github.com/en/copilot/concepts/billing/copilot-requests#model-multipliers))，新模型的點數經常跟舊模型一樣。先前我就覺得奇怪，想說新模型的參數量應該是一直加大才對。
+
+依年費的乘數跳到原先 3~9 倍來預估的話，代表相同的月費，將來只能用三分之一到十分之一。此次方案變更後，GitHub Copilot 訂閱制可能就不那麼划算了，短時間內會有跳槽轉換潮。但我相信其他 AI 訂閱服務也很快會同步跟進，需要反應真實成本的上升。另我在猜，願意提供 AI 訓練的，可能會獲得一些折扣，畢竟開放可訓練材料都用盡了，下一代模型還要吃什麼訓練劇本? 當然是手邊的用戶資料最直接有效啦。
+
+但如果真是用多少算多少，那就直接接 API 就好了嗎? 我猜想月費制還是會有一定的優惠空間 (預付一定用量，少用的人吃虧)。而接下來透過如 OpenRouter 使用開源模型會迎來一波復興潮，至少在原本月費額度用完後，月底前繼續撐著用。但我推測它們的用量增加，一樣要以價制量，同樣會上漲。
+
+另外我推測可以本機執行開源模型的高檔 GPU/Mac Pro 等也會迎來搶購潮，付一次大錢，享受無限量 AI。當然這些硬體又得跟著搶購而 漲價/缺貨 了，再者個人本機能應付的任務還是有限。另開源模型我還是預測會越來越少選項，最新模型的完整版本不再預設開源，僅有縮減版本才開源。
+
+那組織要如何面對超高用量用戶? 如果認為他們在浪費，那就限制嚴格些，讓他們不要佔用太多其他人的額度，當然這些人就很痛苦了。如果認為他們很有生產力，確實可以一人抵十人，仍然比那些不會善用 AI 的工程師划算多了，那就不要給他們太多限制，其他人不用的都給他們用。但若組織額度全被消耗光了，總不能全公司跟著一起放空，加價購就跑不掉了。再不然最後就是裁掉 不願/不會 善用 AI 的人了。
+
+## 結論
+
+Agent-base 的花式玩法，讓善用 AI 的工程師一個人能產出過去十個人的程式碼。這些走在尖端的工程師，也把 AI 提供者訂閱制的成本結構徹底拖垮，本就不可能永久持續。使用 AI 的真實成本，確實要反應在用戶付出的費用上了，用多少算多少的 API 模式計價是不得不然。各種 AI 服務的月費制，隨著模型越來越大，功能越來越豐富，用戶消耗的花樣越來越多，推測也將會更多偏向用多少算多少的模式。
+
+AI 算力成本，已不像摩爾定律時代，隨著時間而腰斬降低。現在用量成長的速度，早高過營運成本下降的幅度。這些人經歷了一人抵十人的生產力多倍增加的快感，現在若要使用相同的模型，保持相同的生產力，需要付出的成本完全不止翻倍成長。
+
+在過去一段時間內，推出多種輕易消耗算力的功能，養足大家的胃口，習慣十倍速提升的快感後，現在終於現形，養套殺的劇本已經亮出來了。過去一段時間十倍速產出的 AI 程式，如今也不可能人工維護，還是只能完全靠 AI 維護，付錢維持活路。
+
+你是被套牢的其中一人嗎!?
