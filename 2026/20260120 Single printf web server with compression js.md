@@ -1,0 +1,25 @@
+# 20260120 Single printf web server with compression js
+# 20260120 單行 printf 網頁伺服器與壓縮 js
+
+**神人現身**
+
+先前的 
+[Google 神人 Jeff Dean 趣聞集](https://christorng.substack.com/p/google-legend-the-jeff-dean-facts) 當中:
+
+> 38. **Jeff Dean once implemented a web server in a single `printf()` call. Other engineers added thousands of lines of explanatory comments but still don't understand exactly how it works. Today that program is known as Google Web Server.**  
+    Jeff Dean 曾用一行 `printf()` 就實作出網頁伺服器；其他工程師後來加了幾千行註解仍看不懂它怎麼運作。如今那程式被稱為 Google Web Server。
+
+後看到 [Implementing a web server in a single printf() call](https://tinyhack.com/2014/03/12/implementing-a-web-server-in-a-single-printf-call/) (2014 超過十年前了)，真的有單行 `printf` 實作 hello world 網頁伺服器的神人現身。裡面的解說仍是給次級神人的，我還是看不太懂。經過一段時間研究了解，包括請 [ChatGPT 解釋](https://chatgpt.com/share/696f7295-91d8-8002-b0fc-3d8cc21b1e69)，現在能大致了解其原理了。
+
+底下是在[原文](https://tinyhack.com/2014/03/12/implementing-a-web-server-in-a-single-printf-call/)以及 [ChatGPT 解釋](https://chatgpt.com/share/696f7295-91d8-8002-b0fc-3d8cc21b1e69)之外，我的額外理解部份，因此你需要配合前兩篇一起看:
+
+1. `.fini_array`  
+   程式結束時原本就會呼叫這個陣列裡註冊的 finalizer 函式。這裡是用來跳到 printf 建立的函式指標項目去。
+2. `printf("AB%n", &count)` 中的 `%n` 格式化字元代表前面輸出的字元數 (此例 `AB` 因此為 `2`)，`&count` 可將字元數 (`2`) 寫入 count 變數位置。利用此功能可將任意數字 (也就是函式地址) 寫入前述指定記憶體位置。參考 [How can a Format-String vulnerability be exploited?](https://stackoverflow.com/questions/7459630/how-can-a-format-string-vulnerability-be-exploited/7459758#7459758) 與 [Uncontrolled format string](https://en.wikipedia.org/wiki/Uncontrolled_format_string)。
+3. shellcode
+   [Shell-Storm](http://repo.shell-storm.org/)
+
+
+這篇是 2014 年的文章，其內方法我沒試過，猜想有些「漏洞」會被 (預設) 堵住，有可能以最新版 環境/工具 會無法執行。
+
+PS: 後剛好看到有 [Owning the AI Pareto Frontier --- Jeff Dean](https://www.latent.space/p/jeffdean) 本人接受的訪談，討論到 Google 前沿 AI 的發展。
