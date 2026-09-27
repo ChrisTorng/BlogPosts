@@ -17,7 +17,7 @@
 
 第一個 [audio-browser](https://github.com/ChrisTorng/audio-browser) 是想要快速瀏覽大量音檔的網站，由 [Commits](https://github.com/ChrisTorng/audio-browser/commits/master/) 可以看到我的提示過程。初始提示不多，後面的實作花非常久時間，建立了約 70 個程式檔 (含測試)。但到目前還是不能執行的狀態。
 
-另一個 [mediapipe-demo](https://github.com/ChrisTorng/mediapipe-demo) 是想用 [MediaPipe](https://mediapipe-studio.webapps.google.com/home) 做[人臉座標辨識](https://mediapipe-studio.webapps.google.com/studio/demo/face_landmarker)，目前是本機可執行，[線上版](https://christorng.github.io/mediapipe-demo/web/dist/)還有問題沒修好。過程可見 [Commits](https://github.com/ChrisTorng/mediapipe-demo/commits/master/)，它建立了約 40 個程式檔 (含測試)。但我需要的只是簡單的三個檔案 (html/js/css) 示範網站，最後還是回到直接用 Copilot 生成，放在 [demo-mediapipe](https://github.com/ChrisTorng/demo-mediapipe)，[線上檢視](https://christorng.github.io/demo-mediapipe/)。
+另一個 [mediapipe-demo](https://github.com/ChrisTorng/mediapipe-demo) 是想用 [MediaPipe](https://mediapipe-studio.webapps.google.com/home) 做[人臉座標辨識](https://mediapipe-studio.webapps.google.com/studio/demo/face_landmarker)，目前是本機可執行，[線上版](https://christorng.idv.tw/mediapipe-demo/web/dist/)還有問題沒修好。過程可見 [Commits](https://github.com/ChrisTorng/mediapipe-demo/commits/master/)，它建立了約 40 個程式檔 (含測試)。但我需要的只是簡單的三個檔案 (html/js/css) 示範網站，最後還是回到直接用 Copilot 生成，放在 [demo-mediapipe](https://github.com/ChrisTorng/demo-mediapipe)，[線上檢視](https://christorng.idv.tw/demo-mediapipe/)。
 
 不過 spec-kit 可以適用於多種 IDE/CLI，這下使用什麼工具的差異變小，最終還是回到 AI 模型能力。
 
