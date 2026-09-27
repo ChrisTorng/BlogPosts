@@ -21,7 +21,7 @@
 1. **使用 BDD Cucumber/Gherkin，先建立井字遊戲網站的詳細規格，先讓我審查。**<br/>
    => 我選擇生成兩個版本，Version 1 是英文的， Version 2 是繁體中文的 (所以以後要直接提示使用繁體中文建立)，我選擇用繁體中文版本 Version 2 繼續。
 
-2. **依目前規格，先建立 GitHub repo 基本實作 (README.md/MIT) Cucumber/Gherkin 自動測試執行環境，再完成遊戲實作。最後完成 預設 GitHub Actions 佈署以及線上網站 https://christorng.github.io/bdd-tic-tac-toe/ 正確執行完成。**<br/>
+2. **依目前規格，先建立 GitHub repo 基本實作 (README.md/MIT) Cucumber/Gherkin 自動測試執行環境，再完成遊戲實作。最後完成 預設 GitHub Actions 佈署以及線上網站 https://christorng.idv.tw/bdd-tic-tac-toe/ 正確執行完成。**<br/>
    => Version 2 花 10 分鐘很快就建立完成，Version 1 花 17 分鐘。兩個都因網路不通而無法安裝 npm 套件。但 Codex 選擇自行重新實作簡單的 cucumber 程式，從而解決了無法下載套件的問題。
 
 我把兩個都建立 PR:
@@ -82,7 +82,7 @@
 最後結果是完全雲端開發的版本被接受，拉回本機開發的版本被放棄。依這一次的開發驗來看:
 
 - 兩個版本非常接近，不像以往製作 3D 手機網頁般，每次有很大差異，我認為規格文件的功勞很大。<br/>
-   => 可見我先前製作的 8 個版本 3D 手機網頁成品: [v1](https://3d-phone-show.vercel.app/) [v2](https://3d-phone-show4.vercel.app/) [v3](https://3d-phone-show3.vercel.app/) [v4](https://3d-phone-show4.vercel.app/) [v5](https://christorng.github.io/3d-phone-show5/) [v6](https://christorng.github.io/3d-phone-show6/) [v7](https://christorng.github.io/3d-phone-show7/) [v8](https://3d-phone-show8.vercel.app/)。其中 v7 還有[《GitHub Copilot 進階實戰及策略》課程錄影](https://christorng.substack.com/p/advanced-github-copilot-recording)，包括對話聊天字幕處理經驗，沒看過的可以前往了解看看
+   => 可見我先前製作的 8 個版本 3D 手機網頁成品: [v1](https://3d-phone-show.vercel.app/) [v2](https://3d-phone-show4.vercel.app/) [v3](https://3d-phone-show3.vercel.app/) [v4](https://3d-phone-show4.vercel.app/) [v5](https://christorng.idv.tw/3d-phone-show5/) [v6](https://christorng.idv.tw/3d-phone-show6/) [v7](https://christorng.idv.tw/3d-phone-show7/) [v8](https://3d-phone-show8.vercel.app/)。其中 v7 還有[《GitHub Copilot 進階實戰及策略》課程錄影](https://christorng.substack.com/p/advanced-github-copilot-recording)，包括對話聊天字幕處理經驗，沒看過的可以前往了解看看
 - 雲端 Codex Cloud + Vercel 佈署是我目前的推薦作法。
 - 其實我對這些作業都還不熟，但後續多練習後，應該有可能全雲端完成。
 - 全雲端的最大優勢，除了不用本機安裝開發環境，還有不管它怎麼浪費或搞壞環境，也是別人的虛擬機器，因此可以放心使用 YOLO (You Only Live Once) mode 的 Agent 模式，讓它全自動執行，不必再讓人一步一步允許執行。
